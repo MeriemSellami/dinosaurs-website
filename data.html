@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biggest Dinosaurs' DataBase</title>
+    <link rel="stylesheet" type="text/css" href="./style/styledata.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="info.html">Info</a>
+                <a href="data.html">DATA</a>
+            </nav>
+        </header>
+        <h1>Biggest Dinosaurs' DataBase</h1>
+        <form id="dinoForm" class="form" action="./php/base.php" method="post">
+            <label for="dinoName">Dinosaur Name:</label><br>
+            <input type="text" id="dinoName" name="dinoName" required><br>
+            <label for="action">Action:</label><br>
+            <select class="items" id="action" name="action">
+                <option value="search">Search</option>
+                <option value="delete">Delete</option>
+            </select><br>
+            <input class="items" type="submit" value="Submit">
+        </form>
+        <div class="resultat" id="results"></div>
+    </div>
+</body>
+</html>
